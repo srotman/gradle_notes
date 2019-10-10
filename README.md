@@ -13,3 +13,6 @@ a personal collection of notes on various aspects of the Gradle build.
 * [Dealing with changing artifact versions](07_changing_versions.md)
 * [Eclipse plugins](08_eclipse.md)
 * [Native plugins](09_native.md)
+
+## Previous Gradle-Training ...
+... [can be found here](https://github.com/srotman/gradle-training)
