@@ -58,6 +58,23 @@ dependencies {
 
 *libraries and versions could also be defined in separate files and 'applied'*
 
+## Centralized Plugin versions
+Use new `pluginManagement` block in `settings` script (See [plugin version management](https://docs.gradle.org/5.6/userguide/plugins.html#sec:plugin_version_management))
+~~~groovy
+pluginManagement {
+  plugins {
+        id 'org.gradle.sample.hello' version "${helloPluginVersion}"
+    }
+}
+~~~
+~~~groovy
+plugins {
+    id 'org.gradle.sample.hello'
+}
+~~~
+
+Plugin versions can be loaded from `gradle.properties` 
+
 ## Platform projects (like BOM)
 https://docs.gradle.org/current/userguide/java_platform_plugin.html
 * Uses `constraints`
